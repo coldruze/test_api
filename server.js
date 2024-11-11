@@ -6,11 +6,9 @@ import {router} from "./router/index.js";
 import cookieParser from "cookie-parser";
 import {errorMiddleware} from "./middlewares/errorMiddleware.js";
 
-
 const app = express();
 const port = config.port;
 const url = config.mongoUrl;
-
 
 app.use(express.json());
 app.use(cookieParser());
